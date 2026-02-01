@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Bangert Consultancy | Tourism Strategy & Growth</title>
+<meta name="description" content="Tourism strategy, destination marketing, and growth consulting. 25+ years of leadership at TripAdvisor, Amadeus, and lastminute.com. Keynote speaking, workshops, DMO consulting, and review optimisation for travel brands across Europe.">
+<meta name="keywords" content="tourism consultancy, destination marketing, DMO consulting, travel marketing, tourism strategy, Romania tourism, wine tourism, TripAdvisor, review optimisation, keynote speaker travel">
+<meta name="author" content="Thomas Bangert">
+<link rel="canonical" href="https://www.thebangertconsultancy.com/">
+
+<!-- Open Graph / Social Sharing -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.thebangertconsultancy.com/">
+<meta property="og:title" content="The Bangert Consultancy | Tourism Strategy & Growth">
+<meta property="og:description" content="Turning destinations into brands the world wants to visit. 25+ years of travel industry leadership. Strategy, campaigns, workshops, and keynote speaking.">
+<meta property="og:image" content="https://www.thebangertconsultancy.com/images/og-image.jpg">
+<meta property="og:locale" content="en_GB">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Bangert Consultancy | Tourism Strategy & Growth">
+<meta name="twitter:description" content="Turning destinations into brands the world wants to visit. Strategy, campaigns, workshops, and keynote speaking.">
+<meta name="twitter:image" content="https://www.thebangertconsultancy.com/images/og-image.jpg">
+
+<!-- Favicon (replace with your actual favicon files) -->
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ========================================
+   CSS VARIABLES & RESET
+   ======================================== */
+:root {
+  --navy: #0F1B2D;
+  --navy-light: #1A2B42;
+  --navy-mid: #152238;
+  --teal: #2E86AB;
+  --teal-light: #3A9BC5;
+  --gold: #C8A45A;
+  --gold-light: #D4B76E;
+  --cream: #FAF8F5;
+  --warm-white: #FEFDFB;
+  --sand: #F0EBE3;
+  --slate: #64748B;
+  --charcoal: #2C3E50;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'DM Sans', -apple-system, sans-serif;
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: var(--font-body);
+  color: var(--charcoal);
+  background: var(--warm-white);
+  line-height: 1.65;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+/* Animations */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(32px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideKen {
+  0% { transform: scale(1.05) translate(0, 0); }
+  100% { transform: scale(1.12) translate(-2%, -1%); }
+}
+
+.anim { opacity: 0; transform: translateY(28px); transition: opacity 0.7s var(--ease), transform 0.7s var(--ease); }
+.anim.vis { opacity: 1; transform: translateY(0); }
+
+/* ========================================
+   NAVIGATION
+   ======================================== */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  padding: 0 24px; transition: all 0.4s var(--ease); background: transparent;
+}
+.nav.scrolled {
+  background: rgba(15, 27, 45, 0.97);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 1px 0 rgba(200, 164, 90, 0.15);
+}
+.nav-inner {
+  max-width: 1200px; margin: 0 auto;
+  display: flex; justify-content: space-between; align-items: center; height: 72px;
+}
+.nav-logo { display: flex; align-items: center; gap: 12px; }
+.nav-logo-mark {
+  width: 36px; height: 36px; background: var(--gold);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display); font-weight: 700; font-size: 18px; color: var(--navy);
+}
+.nav-logo-text {
+  font-family: var(--font-body); font-weight: 600; font-size: 13px;
+  letter-spacing: 2.5px; text-transform: uppercase; color: white;
+}
+.nav-links { display: flex; gap: 28px; align-items: center; list-style: none; }
+.nav-links a {
+  font-weight: 500; font-size: 12.5px; letter-spacing: 1px;
+  text-transform: uppercase; color: rgba(255,255,255,0.7); transition: color 0.3s;
+  position: relative;
+}
+.nav-links a:hover { color: var(--gold); }
+.nav-links a::after {
+  content: ''; position: absolute; bottom: -4px; left: 0;
+  width: 0; height: 1px; background: var(--gold); transition: width 0.3s var(--ease);
+}
+.nav-links a:hover::after { width: 100%; }
+.nav-cta {
+  background: var(--gold) !important; color: var(--navy) !important;
+  padding: 10px 22px !important; font-weight: 600 !important;
+  transition: all 0.3s !important;
+}
+.nav-cta:hover { background: var(--gold-light) !important; transform: translateY(-1px); }
+.nav-cta::after { display: none !important; }
+.nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+.nav-toggle span { display: block; width: 24px; height: 2px; background: white; margin: 5px 0; transition: all 0.3s; }
+
+/* ========================================
+   HERO WITH PHOTO SLIDESHOW
+   ======================================== */
+.hero { position: relative; min-height: 100vh; display: flex; align-items: center; overflow: hidden; }
+
+/* Background slideshow */
+.hero-slides {
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 0;
+}
+.hero-slide {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  background-size: cover; background-position: center;
+  opacity: 0; transition: opacity 1.2s ease-in-out;
+  animation: slideKen 12s ease-in-out infinite alternate;
+}
+.hero-slide.active { opacity: 1; }
+
+/*
+   HERO SLIDE IMAGES:
+   Drop your photos into /images/hero/ and they'll appear automatically.
+   Recommended: 1920x1080px JPG, under 400KB each.
+*/
+.hero-slide:nth-child(1) { background-image: url('/images/hero/slide-1.jpg'); background-color: #1a2a3a; }
+.hero-slide:nth-child(2) { background-image: url('/images/hero/slide-2.jpg'); background-color: #1d2d3f; }
+.hero-slide:nth-child(3) { background-image: url('/images/hero/slide-3.jpg'); background-color: #162636; }
+.hero-slide:nth-child(4) { background-image: url('/images/hero/slide-4.jpg'); background-color: #1f2f41; }
+.hero-slide:nth-child(5) { background-image: url('/images/hero/slide-5.jpg'); background-color: #18283a; }
+
+/* Dark overlay on slides for text legibility */
+.hero-overlay {
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 1;
+  background:
+    linear-gradient(90deg, rgba(15,27,45,0.92) 0%, rgba(15,27,45,0.75) 50%, rgba(15,27,45,0.55) 100%);
+}
+
+/* Slide indicators */
+.hero-dots {
+  position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);
+  z-index: 5; display: flex; gap: 10px;
+}
+.hero-dot {
+  width: 32px; height: 3px; background: rgba(255,255,255,0.25);
+  cursor: pointer; transition: all 0.4s; border: none; padding: 0;
+}
+.hero-dot.active { background: var(--gold); width: 48px; }
+
+/* Slide caption */
+.hero-slide-caption {
+  position: absolute; bottom: 70px; right: 40px; z-index: 5;
+  font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: rgba(255,255,255,0.4); font-weight: 500;
+  transition: opacity 0.6s;
+}
+
+.hero-content {
+  position: relative; z-index: 3;
+  max-width: 1200px; margin: 0 auto; padding: 120px 24px 100px;
+  display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 60px; align-items: center;
+}
+.hero-text { animation: fadeUp 0.9s var(--ease) forwards; }
+.hero-eyebrow {
+  font-weight: 600; font-size: 12px; letter-spacing: 3px;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 24px;
+  display: flex; align-items: center; gap: 12px;
+}
+.hero-eyebrow::before { content: ''; width: 32px; height: 1px; background: var(--gold); }
+.hero h1 {
+  font-family: var(--font-display); font-size: clamp(34px, 4.2vw, 54px);
+  font-weight: 600; line-height: 1.15; color: white; margin-bottom: 24px;
+}
+.hero h1 em { font-style: italic; color: var(--gold); }
+.hero-sub {
+  font-size: 17px; line-height: 1.75; color: rgba(255,255,255,0.6);
+  max-width: 500px; margin-bottom: 40px; font-weight: 300;
+}
+.hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; }
+
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--gold); color: var(--navy);
+  padding: 16px 32px; font-family: var(--font-body);
+  font-weight: 600; font-size: 13px; letter-spacing: 1px;
+  text-transform: uppercase; border: none; cursor: pointer;
+  transition: all 0.35s var(--ease);
+}
+.btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(200,164,90,0.3); }
+
+.btn-secondary {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: transparent; color: white;
+  padding: 16px 32px; font-family: var(--font-body);
+  font-weight: 500; font-size: 13px; letter-spacing: 1px;
+  text-transform: uppercase; border: 1px solid rgba(255,255,255,0.25);
+  cursor: pointer; transition: all 0.35s var(--ease);
+}
+.btn-secondary:hover { border-color: var(--gold); color: var(--gold); }
+
+/* Hero credential cards */
+.hero-credentials {
+  display: flex; flex-direction: column; gap: 14px;
+  animation: fadeUp 0.9s var(--ease) 0.2s both;
+}
+.credential-card {
+  background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+  padding: 22px 26px; backdrop-filter: blur(8px); transition: all 0.35s var(--ease);
+}
+.credential-card:hover { background: rgba(255,255,255,0.07); border-color: rgba(200,164,90,0.2); transform: translateX(4px); }
+.credential-role { font-weight: 600; font-size: 15px; color: white; margin-bottom: 3px; }
+.credential-company { font-size: 13px; color: var(--gold); font-weight: 500; }
+.credential-detail { font-size: 12.5px; color: rgba(255,255,255,0.4); margin-top: 3px; }
+
+/* ========================================
+   TRUST BAR
+   ======================================== */
+.trust-bar {
+  background: var(--navy); border-top: 1px solid rgba(200,164,90,0.1);
+  padding: 36px 24px;
+}
+.trust-inner { max-width: 1200px; margin: 0 auto; }
+.trust-label {
+  font-size: 11px; letter-spacing: 3px; text-transform: uppercase;
+  color: rgba(255,255,255,0.3); font-weight: 600; text-align: center; margin-bottom: 24px;
+}
+.trust-logos { display: flex; justify-content: center; align-items: center; gap: 44px; flex-wrap: wrap; }
+.trust-logo {
+  font-weight: 600; font-size: 14px; color: rgba(255,255,255,0.35);
+  letter-spacing: 1px; white-space: nowrap; transition: color 0.3s;
+}
+.trust-logo:hover { color: rgba(255,255,255,0.65); }
+
+/* ========================================
+   STATS
+   ======================================== */
+.stats { padding: 72px 24px; background: var(--cream); }
+.stats-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; }
+.stat-item { text-align: center; padding: 28px 16px; position: relative; }
+.stat-item:not(:last-child)::after {
+  content: ''; position: absolute; right: 0; top: 20%; height: 60%; width: 1px;
+  background: linear-gradient(180deg, transparent, rgba(200,164,90,0.3), transparent);
+}
+.stat-number { font-family: var(--font-display); font-size: 46px; font-weight: 700; color: var(--navy); line-height: 1; margin-bottom: 8px; }
+.stat-label { font-size: 12px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--slate); }
+
+/* ========================================
+   SECTION HEADERS
+   ======================================== */
+.section-header { text-align: center; margin-bottom: 56px; }
+.section-eyebrow { font-weight: 600; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: var(--teal); margin-bottom: 14px; }
+.section-title { font-family: var(--font-display); font-size: clamp(28px, 3.2vw, 40px); font-weight: 600; color: var(--navy); line-height: 1.2; margin-bottom: 14px; }
+.section-subtitle { font-size: 16px; color: var(--slate); max-width: 580px; margin: 0 auto; line-height: 1.7; font-weight: 300; }
+.gold-bar { width: 48px; height: 3px; background: var(--gold); margin: 18px auto 0; }
+
+/* ========================================
+   ABOUT
+   ======================================== */
+.about { padding: 100px 24px; background: var(--warm-white); }
+.about-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.3fr; gap: 72px; align-items: center; }
+
+/* MINI SLIDESHOW in About section */
+.about-slideshow {
+  position: relative; width: 100%; aspect-ratio: 4/5; overflow: hidden;
+  background: var(--sand);
+}
+.about-slide {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  background-size: cover; background-position: center top;
+  opacity: 0; transition: opacity 0.8s ease;
+}
+.about-slide.active { opacity: 1; }
+
+/*
+   ABOUT PHOTOS: Drop into /images/about/ folder.
+   Recommended: 800x1000px JPG, portrait orientation.
+*/
+.about-slide:nth-child(1) { background-image: url('/images/about/headshot.jpg'); background-color: var(--sand); }
+.about-slide:nth-child(2) { background-image: url('/images/about/speaking.jpg'); background-color: #E5DFD4; }
+.about-slide:nth-child(3) { background-image: url('/images/about/conference.jpg'); background-color: var(--sand); }
+
+.about-slide-label {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  padding: 16px 20px; background: linear-gradient(0deg, rgba(15,27,45,0.8) 0%, transparent 100%);
+  font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: rgba(255,255,255,0.7); font-weight: 500;
+}
+
+.about-dots {
+  position: absolute; bottom: 48px; right: 20px;
+  display: flex; gap: 6px; z-index: 2;
+}
+.about-dot {
+  width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.35);
+  border: none; cursor: pointer; padding: 0; transition: all 0.3s;
+}
+.about-dot.active { background: var(--gold); transform: scale(1.3); }
+
+.about-image-accent {
+  position: absolute; bottom: -14px; right: -14px;
+  width: 110px; height: 110px; border: 2px solid var(--gold); z-index: -1;
+}
+
+.about-content h3 { font-family: var(--font-display); font-size: 32px; font-weight: 600; color: var(--navy); margin-bottom: 6px; }
+.about-role { font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--teal); margin-bottom: 22px; }
+.about-content p { font-size: 15.5px; line-height: 1.8; color: var(--charcoal); margin-bottom: 14px; }
+
+.about-career { margin-top: 28px; padding-top: 28px; border-top: 1px solid var(--sand); }
+.career-path { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.career-item { padding: 14px; background: var(--cream); border-left: 3px solid var(--gold); }
+.career-item-title { font-weight: 600; font-size: 13.5px; color: var(--navy); }
+.career-item-company { font-size: 12.5px; color: var(--slate); }
+
+/* ========================================
+   SERVICES
+   ======================================== */
+.services { padding: 100px 24px; background: var(--cream); }
+.services-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.service-card {
+  background: white; padding: 36px; border: 1px solid rgba(0,0,0,0.04);
+  transition: all 0.4s var(--ease); position: relative; overflow: hidden;
+}
+.service-card::before {
+  content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 3px;
+  background: linear-gradient(90deg, var(--teal), var(--gold));
+  transform: scaleX(0); transform-origin: left; transition: transform 0.4s var(--ease);
+}
+.service-card:hover::before { transform: scaleX(1); }
+.service-card:hover { transform: translateY(-3px); box-shadow: 0 16px 48px rgba(15,27,45,0.07); }
+.service-icon {
+  width: 44px; height: 44px; background: var(--navy);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 20px; font-size: 18px; color: var(--gold);
+}
+.service-card h3 { font-family: var(--font-display); font-size: 20px; font-weight: 600; color: var(--navy); margin-bottom: 10px; }
+.service-card p { font-size: 14.5px; line-height: 1.7; color: var(--slate); margin-bottom: 18px; }
+.service-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.service-tag { font-size: 10.5px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; padding: 5px 10px; background: var(--cream); color: var(--charcoal); }
+
+/* ========================================
+   WORKSHOPS
+   ======================================== */
+.workshops { padding: 100px 24px; background: var(--navy); position: relative; overflow: hidden; }
+.workshops::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(circle at 10% 80%, rgba(46,134,171,0.08) 0%, transparent 40%),
+              radial-gradient(circle at 90% 20%, rgba(200,164,90,0.05) 0%, transparent 40%);
+}
+.workshops .section-eyebrow { color: var(--gold); }
+.workshops .section-title { color: white; }
+.workshops .section-subtitle { color: rgba(255,255,255,0.5); }
+.workshops-content { position: relative; z-index: 2; max-width: 1200px; margin: 0 auto; }
+.workshops-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; margin-top: 44px; }
+.workshop-column-title {
+  font-family: var(--font-display); font-size: 19px; color: var(--gold);
+  margin-bottom: 24px; padding-bottom: 10px; border-bottom: 1px solid rgba(200,164,90,0.15);
+}
+.workshop-item { padding: 18px 0; border-bottom: 1px solid rgba(255,255,255,0.05); transition: all 0.3s; }
+.workshop-item:hover { padding-left: 10px; }
+.workshop-item h4 { font-weight: 600; font-size: 15px; color: white; margin-bottom: 5px; }
+.workshop-item p { font-size: 13.5px; color: rgba(255,255,255,0.4); line-height: 1.6; }
+.workshop-format {
+  display: inline-block; margin-top: 7px; font-size: 10.5px; font-weight: 600;
+  letter-spacing: 1px; text-transform: uppercase; color: var(--teal-light);
+  padding: 3px 9px; border: 1px solid rgba(46,134,171,0.25);
+}
+
+/* ========================================
+   CASE STUDIES
+   ======================================== */
+.cases { padding: 100px 24px; background: var(--warm-white); }
+.cases-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.case-card {
+  position: relative; background: var(--navy); padding: 36px 28px;
+  min-height: 300px; display: flex; flex-direction: column; justify-content: flex-end;
+  overflow: hidden; transition: all 0.4s var(--ease);
+}
+.case-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(180deg, rgba(15,27,45,0.25) 0%, rgba(15,27,45,0.9) 100%); z-index: 1;
+}
+.case-card:hover { transform: translateY(-3px); }
+.case-content { position: relative; z-index: 2; }
+.case-label { font-size: 10.5px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+.case-content h3 { font-family: var(--font-display); font-size: 20px; color: white; margin-bottom: 8px; line-height: 1.3; }
+.case-content p { font-size: 13.5px; color: rgba(255,255,255,0.55); line-height: 1.6; }
+.case-stat { display: inline-block; margin-top: 14px; font-family: var(--font-display); font-size: 26px; font-weight: 700; color: var(--gold); }
+.case-stat-label { font-size: 11px; color: rgba(255,255,255,0.45); font-weight: 500; text-transform: uppercase; letter-spacing: 1px; }
+
+/* ========================================
+   TESTIMONIALS
+   ======================================== */
+.testimonials { padding: 100px 24px; background: var(--cream); }
+.testimonials-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.testimonial-card { background: white; padding: 32px; border: 1px solid rgba(0,0,0,0.04); display: flex; flex-direction: column; }
+.testimonial-quote { font-family: var(--font-display); font-size: 48px; color: var(--gold); line-height: 1; margin-bottom: 8px; }
+.testimonial-text { font-size: 14.5px; line-height: 1.75; color: var(--charcoal); flex: 1; margin-bottom: 20px; font-style: italic; }
+.testimonial-author { padding-top: 18px; border-top: 1px solid var(--sand); }
+.testimonial-name { font-weight: 700; font-size: 14px; color: var(--navy); }
+.testimonial-role { font-size: 12.5px; color: var(--slate); }
+
+/* ========================================
+   SPEAKING / VIDEO
+   ======================================== */
+.speaking { padding: 100px 24px; background: var(--warm-white); }
+.speaking-layout { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.2fr 1fr; gap: 56px; align-items: center; }
+.video-wrapper { position: relative; width: 100%; padding-bottom: 56.25%; background: var(--navy); overflow: hidden; }
+.video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+.speaking-info h3 { font-family: var(--font-display); font-size: 30px; color: var(--navy); margin-bottom: 14px; line-height: 1.3; }
+.speaking-info p { font-size: 15px; line-height: 1.75; color: var(--slate); margin-bottom: 22px; }
+.speaking-events { list-style: none; margin-bottom: 28px; }
+.speaking-events li { padding: 11px 0; border-bottom: 1px solid var(--sand); display: flex; justify-content: space-between; align-items: center; font-size: 14.5px; }
+.speaking-events li strong { color: var(--navy); }
+.speaking-events li span { color: var(--slate); font-size: 12.5px; }
+
+/* ========================================
+   NEWS FEED SECTION
+   ======================================== */
+.news { padding: 100px 24px; background: var(--navy-mid); position: relative; overflow: hidden; }
+.news::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(circle at 80% 80%, rgba(46,134,171,0.06) 0%, transparent 50%);
+}
+.news .section-eyebrow { color: var(--gold); }
+.news .section-title { color: white; }
+.news .section-subtitle { color: rgba(255,255,255,0.45); }
+
+.news-content { position: relative; z-index: 2; max-width: 1200px; margin: 0 auto; }
+
+.news-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px;
+}
+
+.news-card {
+  background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06);
+  padding: 28px; transition: all 0.35s var(--ease); display: flex; flex-direction: column;
+}
+.news-card:hover { background: rgba(255,255,255,0.06); border-color: rgba(200,164,90,0.15); transform: translateY(-3px); }
+
+.news-card-source {
+  font-size: 10.5px; font-weight: 600; letter-spacing: 1.5px;
+  text-transform: uppercase; color: var(--teal-light); margin-bottom: 10px;
+}
+/* Geographic category indicators */
+.news-card-category {
+  display: inline-block; font-size: 9.5px; font-weight: 700; letter-spacing: 1.5px;
+  text-transform: uppercase; padding: 3px 8px; margin-bottom: 12px;
+}
+.news-cat-romania { background: rgba(200,164,90,0.15); color: var(--gold); }
+.news-cat-europe { background: rgba(46,134,171,0.15); color: var(--teal-light); }
+.news-cat-global { background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.5); }
+
+/* Filter tabs */
+.news-filters {
+  display: flex; justify-content: center; gap: 8px; margin-bottom: 36px;
+}
+.news-filter-btn {
+  background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.45); padding: 8px 20px;
+  font-family: var(--font-body); font-size: 12px; font-weight: 600;
+  letter-spacing: 1px; text-transform: uppercase; cursor: pointer;
+  transition: all 0.3s var(--ease);
+}
+.news-filter-btn:hover { border-color: rgba(255,255,255,0.25); color: rgba(255,255,255,0.7); }
+.news-filter-btn.active { background: rgba(200,164,90,0.15); border-color: var(--gold); color: var(--gold); }
+.news-card.hidden { display: none; }
+.news-card h4 {
+  font-family: var(--font-display); font-size: 17px; font-weight: 600;
+  color: white; line-height: 1.4; margin-bottom: 10px; flex: 1;
+}
+.news-card p {
+  font-size: 13px; line-height: 1.6; color: rgba(255,255,255,0.4); margin-bottom: 16px;
+}
+.news-card-date { font-size: 11px; color: rgba(255,255,255,0.25); font-weight: 500; }
+.news-card-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 12px; font-weight: 600; letter-spacing: 0.5px;
+  text-transform: uppercase; color: var(--gold); margin-top: 12px;
+  transition: all 0.3s;
+}
+.news-card-link:hover { color: var(--gold-light); gap: 10px; }
+
+.news-refresh {
+  text-align: center; margin-top: 40px;
+}
+.news-refresh-note {
+  font-size: 12px; color: rgba(255,255,255,0.25); font-style: italic;
+}
+
+/* Loading state for news */
+.news-loading {
+  grid-column: 1 / -1; text-align: center; padding: 48px;
+  color: rgba(255,255,255,0.3); font-size: 14px;
+}
+
+/* ========================================
+   CTA
+   ======================================== */
+.cta { padding: 100px 24px; background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%); text-align: center; position: relative; overflow: hidden; }
+.cta::before {
+  content: ''; position: absolute; top: 50%; left: 50%; width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(200,164,90,0.05) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+}
+.cta-content { position: relative; z-index: 2; max-width: 660px; margin: 0 auto; }
+.cta h2 { font-family: var(--font-display); font-size: clamp(28px, 3.2vw, 40px); color: white; margin-bottom: 14px; line-height: 1.25; }
+.cta p { font-size: 16px; color: rgba(255,255,255,0.55); margin-bottom: 36px; line-height: 1.7; font-weight: 300; }
+.cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.cta-note { margin-top: 20px; font-size: 12.5px; color: rgba(255,255,255,0.3); }
+
+/* ========================================
+   CONTACT
+   ======================================== */
+.contact { padding: 100px 24px; background: var(--cream); }
+.contact-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.2fr; gap: 72px; align-items: start; }
+.contact-info h3 { font-family: var(--font-display); font-size: 30px; color: var(--navy); margin-bottom: 14px; }
+.contact-info p { font-size: 15px; color: var(--slate); line-height: 1.7; margin-bottom: 28px; }
+.contact-detail { display: flex; align-items: center; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--sand); }
+.contact-detail-icon { width: 38px; height: 38px; background: var(--navy); display: flex; align-items: center; justify-content: center; color: var(--gold); font-size: 15px; flex-shrink: 0; }
+.contact-detail-text { font-size: 14px; color: var(--charcoal); }
+.contact-detail-text a { color: var(--teal); font-weight: 500; }
+
+.contact-form { background: white; padding: 44px; border: 1px solid rgba(0,0,0,0.04); }
+.form-group { margin-bottom: 22px; }
+.form-group label { display: block; font-size: 11.5px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--navy); margin-bottom: 7px; }
+.form-group input, .form-group textarea, .form-group select {
+  width: 100%; padding: 13px 15px; border: 1px solid #E0DDD8;
+  background: var(--cream); font-family: var(--font-body); font-size: 14.5px;
+  color: var(--charcoal); transition: border-color 0.3s; outline: none; appearance: none;
+}
+.form-group input:focus, .form-group textarea:focus, .form-group select:focus { border-color: var(--teal); }
+.form-group textarea { min-height: 110px; resize: vertical; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+.btn-submit {
+  width: 100%; padding: 15px; background: var(--navy); color: white;
+  font-family: var(--font-body); font-weight: 600; font-size: 13px;
+  letter-spacing: 1.5px; text-transform: uppercase; border: none;
+  cursor: pointer; transition: all 0.35s var(--ease);
+}
+.btn-submit:hover { background: var(--teal); transform: translateY(-1px); }
+
+/* ========================================
+   FOOTER
+   ======================================== */
+.footer { background: var(--navy); padding: 56px 24px 28px; border-top: 3px solid var(--gold); }
+.footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 56px; }
+.footer-brand-name { font-weight: 600; font-size: 13px; letter-spacing: 2.5px; text-transform: uppercase; color: white; margin-bottom: 14px; }
+.footer-tagline { font-size: 14px; color: rgba(255,255,255,0.4); line-height: 1.7; margin-bottom: 20px; }
+.footer-social { display: flex; gap: 10px; }
+.footer-social a { width: 38px; height: 38px; border: 1px solid rgba(255,255,255,0.12); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.45); font-size: 13px; transition: all 0.3s; }
+.footer-social a:hover { border-color: var(--gold); color: var(--gold); }
+.footer-col h4 { font-size: 11.5px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 18px; }
+.footer-col ul { list-style: none; }
+.footer-col li { margin-bottom: 10px; }
+.footer-col a { font-size: 13.5px; color: rgba(255,255,255,0.45); transition: color 0.3s; }
+.footer-col a:hover { color: white; }
+.footer-bottom { max-width: 1200px; margin: 44px auto 0; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; font-size: 12.5px; color: rgba(255,255,255,0.25); }
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+@media (max-width: 1024px) {
+  .hero-content { grid-template-columns: 1fr; gap: 36px; }
+  .hero-credentials { max-width: 480px; }
+  .about-grid { grid-template-columns: 1fr; gap: 36px; }
+  .services-grid { grid-template-columns: 1fr; }
+  .workshops-grid { grid-template-columns: 1fr; gap: 36px; }
+  .cases-grid { grid-template-columns: 1fr 1fr; }
+  .speaking-layout { grid-template-columns: 1fr; gap: 36px; }
+  .contact-grid { grid-template-columns: 1fr; gap: 36px; }
+  .footer-inner { grid-template-columns: 1fr; gap: 28px; }
+  .news-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .nav-toggle { display: block; }
+  .nav-links.open {
+    display: flex; flex-direction: column; position: absolute;
+    top: 72px; left: 0; right: 0; background: rgba(15,27,45,0.98); padding: 24px; gap: 14px;
+  }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .stat-item:not(:last-child)::after { display: none; }
+  .cases-grid, .testimonials-grid, .news-grid { grid-template-columns: 1fr; }
+  .career-path, .form-row { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 30px; }
+  .hero-slide-caption { display: none; }
+  .footer-bottom { flex-direction: column; gap: 6px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============ NAVIGATION ============ -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <div class="nav-logo-mark">B</div>
+      <span class="nav-logo-text">The Bangert Consultancy</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#workshops">Workshops</a></li>
+      <li><a href="#results">Results</a></li>
+      <li><a href="#news">Industry News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://calendly.com/thomas-thebangertconsultancy/30min" target="_blank" class="nav-cta">Book a Call</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ============ HERO WITH PHOTO SLIDESHOW ============ -->
+<section class="hero">
+  <!-- 
+    PHOTO SLIDESHOW INSTRUCTIONS:
+    Replace the gradient backgrounds below with your actual images using:
+    style="background-image: url('your-photo.jpg');"
+    
+    Recommended photos (5 slots):
+    1. You on stage at IQ Digital (wide shot showing audience)
+    2. You at Discover North-East Conference  
+    3. Workshop delivery (you with participants)
+    4. A destination you've worked with (Mamaia coastline, Moldova vineyards)
+    5. Professional headshot or panel discussion shot
+  -->
+  <div class="hero-slides" id="heroSlides">
+    <div class="hero-slide active" data-caption="Speaking at IQ Digital, Constanta 2025"></div>
+    <div class="hero-slide" data-caption="Discover North-East Tourism Conference, Botosani"></div>
+    <div class="hero-slide" data-caption="Workshop delivery for tourism professionals"></div>
+    <div class="hero-slide" data-caption="DMO Mamaia-Constanta campaign"></div>
+    <div class="hero-slide" data-caption="Moldova wine tourism project"></div>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-slide-caption" id="heroCaption">Speaking at IQ Digital, Constanta 2025</div>
+  <div class="hero-dots" id="heroDots">
+    <button class="hero-dot active" data-index="0"></button>
+    <button class="hero-dot" data-index="1"></button>
+    <button class="hero-dot" data-index="2"></button>
+    <button class="hero-dot" data-index="3"></button>
+    <button class="hero-dot" data-index="4"></button>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="hero-eyebrow">Tourism Strategy & Growth</div>
+      <h1>Turning destinations into <em>brands</em> the world wants to visit</h1>
+      <p class="hero-sub">25 years of leadership at TripAdvisor, Amadeus, and lastminute.com, now focused on growing tourism brands, destinations, and travel businesses across Europe and beyond.</p>
+      <div class="hero-buttons">
+        <a href="https://calendly.com/thomas-thebangertconsultancy/30min" target="_blank" class="btn-primary">Book a Discovery Call &rarr;</a>
+        <a href="#services" class="btn-secondary">Explore Services</a>
+      </div>
+    </div>
+    <div class="hero-credentials">
+      <div class="credential-card">
+        <div class="credential-role">EU Director</div>
+        <div class="credential-company">TripAdvisor</div>
+        <div class="credential-detail">Led European market expansion and advertiser partnerships</div>
+      </div>
+      <div class="credential-card">
+        <div class="credential-role">Global Director</div>
+        <div class="credential-company">Amadeus / travel audience</div>
+        <div class="credential-detail">Shaped global programmatic strategy for travel brands</div>
+      </div>
+      <div class="credential-card">
+        <div class="credential-role">Media Director</div>
+        <div class="credential-company">lastminute.com</div>
+        <div class="credential-detail">Built and scaled European advertising revenue streams</div>
+      </div>
+      <div class="credential-card">
+        <div class="credential-role">VP Growth</div>
+        <div class="credential-company">PerfectStay</div>
+        <div class="credential-detail">Drove growth strategy for curated travel marketplace</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST BAR ============ -->
+<section class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-label">Trusted by leading brands in travel</div>
+    <div class="trust-logos">
+      <!-- Replace with actual logo images in Wix -->
+      <span class="trust-logo">TRIPADVISOR</span>
+      <span class="trust-logo">AMADEUS</span>
+      <span class="trust-logo">SOJERN</span>
+      <span class="trust-logo">eDREAMS ODIGEO</span>
+      <span class="trust-logo">DMO MAMAIA</span>
+      <span class="trust-logo">LASTMINUTE.COM</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="stats">
+  <div class="stats-grid">
+    <div class="stat-item anim"><div class="stat-number">25+</div><div class="stat-label">Years in Travel</div></div>
+    <div class="stat-item anim"><div class="stat-number">40+</div><div class="stat-label">Clients & Projects</div></div>
+    <div class="stat-item anim"><div class="stat-number">15+</div><div class="stat-label">Countries Served</div></div>
+    <div class="stat-item anim"><div class="stat-number">50%</div><div class="stat-label">CTR on Best Campaigns</div></div>
+  </div>
+</section>
+
+<!-- ============ ABOUT WITH MINI SLIDESHOW ============ -->
+<section class="about" id="about">
+  <div class="about-grid">
+    <div class="about-image-wrapper anim" style="position:relative;">
+      <!--
+        ABOUT SLIDESHOW INSTRUCTIONS:
+        Replace gradients with your actual photos:
+        1. Professional headshot
+        2. Photo of you speaking / presenting
+        3. Casual professional shot (at a conference, meeting, etc.)
+      -->
+      <div class="about-slideshow" id="aboutSlideshow">
+        <div class="about-slide active">
+          <div class="about-slide-label">Professional headshot</div>
+        </div>
+        <div class="about-slide">
+          <div class="about-slide-label">Speaking at IQ Digital 2025</div>
+        </div>
+        <div class="about-slide">
+          <div class="about-slide-label">At WTM London</div>
+        </div>
+        <div class="about-dots" id="aboutDots">
+          <button class="about-dot active" data-index="0"></button>
+          <button class="about-dot" data-index="1"></button>
+          <button class="about-dot" data-index="2"></button>
+        </div>
+      </div>
+      <div class="about-image-accent"></div>
+    </div>
+    <div class="about-content anim">
+      <div class="section-eyebrow">About the Founder</div>
+      <h3>Thomas Bangert</h3>
+      <div class="about-role">Founder & Principal Consultant</div>
+      <p>With over 25 years shaping the digital strategies of the world's leading travel platforms, Thomas brings a rare combination of global brand experience and hands-on market knowledge to every engagement.</p>
+      <p>From leading EU operations at TripAdvisor to building programmatic advertising at Amadeus to scaling revenue at lastminute.com, Thomas has sat on every side of the travel marketing table. Today, he channels that experience into helping destinations, hotel groups, DMOs, and travel tech companies grow smarter and faster.</p>
+      <p>Based between Romania and the UK, Thomas also co-founded <strong>Ruuts.travel</strong>, <strong>Ruuts.pro</strong>, and <strong>iWander</strong>, ventures blending digital storytelling with responsible tourism innovation.</p>
+      <div class="about-career">
+        <div class="career-path">
+          <div class="career-item"><div class="career-item-title">EU Director</div><div class="career-item-company">TripAdvisor</div></div>
+          <div class="career-item"><div class="career-item-title">Global Director</div><div class="career-item-company">Amadeus / travel audience</div></div>
+          <div class="career-item"><div class="career-item-title">Media Director</div><div class="career-item-company">lastminute.com</div></div>
+          <div class="career-item"><div class="career-item-title">VP Growth</div><div class="career-item-company">PerfectStay</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-header anim">
+      <div class="section-eyebrow">What We Do</div>
+      <h2 class="section-title">Strategic Services for Tourism Growth</h2>
+      <p class="section-subtitle">Concise, high-impact engagements. Clear deliverables, real outcomes. No retainer treadmills.</p>
+      <div class="gold-bar"></div>
+    </div>
+  </div>
+  <div class="services-grid">
+    <div class="service-card anim"><div class="service-icon">&#9733;</div><h3>Business Growth Strategy & Travel Marketing</h3><p>Market expansion, go-to-market plans, B2B and B2C sales enablement, performance branding, channel partner development, and investor decks.</p><div class="service-tags"><span class="service-tag">Market Entry</span><span class="service-tag">GTM Plans</span><span class="service-tag">Sales Enablement</span><span class="service-tag">Investor Decks</span></div></div>
+    <div class="service-card anim"><div class="service-icon">&#9670;</div><h3>Destination Marketing Strategy</h3><p>Strategic positioning, brand development, cross-market campaign planning, feeder market segmentation, influencer relations, and FAM trip curation.</p><div class="service-tags"><span class="service-tag">Brand Strategy</span><span class="service-tag">Feeder Markets</span><span class="service-tag">DMO Consulting</span><span class="service-tag">FAM Trips</span></div></div>
+    <div class="service-card anim"><div class="service-icon">&#9654;</div><h3>Performance Digital Campaigns</h3><p>Programmatic display, retargeting, geo-targeted video ads, social channel strategy, creative direction, and full campaign reporting.</p><div class="service-tags"><span class="service-tag">Programmatic</span><span class="service-tag">Video Ads</span><span class="service-tag">Social Media</span><span class="service-tag">Reporting</span></div></div>
+    <div class="service-card anim"><div class="service-icon">&#9733;</div><h3>Reputation & Review Optimisation</h3><p>TripAdvisor and OTA management, review response strategy, profile optimisation, score improvement. Built on direct experience leading these platforms.</p><div class="service-tags"><span class="service-tag">TripAdvisor</span><span class="service-tag">OTA Profiles</span><span class="service-tag">Review Strategy</span><span class="service-tag">Hotels & Wineries</span></div></div>
+  </div>
+</section>
+
+<!-- ============ WORKSHOPS ============ -->
+<section class="workshops" id="workshops">
+  <div class="workshops-content">
+    <div class="section-header anim">
+      <div class="section-eyebrow">Knowledge Transfer</div>
+      <h2 class="section-title">Workshops, Masterclasses & Keynotes</h2>
+      <p class="section-subtitle">Interactive sessions for tourism professionals who need practical, actionable insights.</p>
+      <div class="gold-bar"></div>
+    </div>
+    <div class="workshops-grid">
+      <div class="anim">
+        <div class="workshop-column-title">Workshop Topics</div>
+        <div class="workshop-item"><h4>How to Run a DMO Campaign Across Multiple Feeder Markets</h4><p>Real frameworks from Mamaia-Constanta, Moldova wine regions, and international destinations.</p><span class="workshop-format">Half-Day or Full-Day</span></div>
+        <div class="workshop-item"><h4>Lessons from TripAdvisor: Credibility & Conversion</h4><p>Insider knowledge from leading the platform. How review scores directly impact bookings.</p><span class="workshop-format">Half-Day Workshop</span></div>
+        <div class="workshop-item"><h4>Wine Tourism: A Premium Niche with Long-Term ROI</h4><p>Proven strategies from the Moldova Wine Tourism Growth Plan.</p><span class="workshop-format">Half-Day or Keynote</span></div>
+        <div class="workshop-item"><h4>From Zero to DMO: Building a Destination Management Organisation</h4><p>Governance, stakeholder management, campaign planning, and KPIs for new DMOs.</p><span class="workshop-format">2-Day Intensive</span></div>
+      </div>
+      <div class="anim">
+        <div class="workshop-column-title">Also Available</div>
+        <div class="workshop-item"><h4>Personalised Video Campaigns vs Static Ads</h4><p>What drives travel bookings? Data from real campaigns across European destinations.</p><span class="workshop-format">Keynote or Workshop</span></div>
+        <div class="workshop-item"><h4>Sustainable Tourism That Actually Works</h4><p>Measurable sustainability frameworks and eco-certification pathways beyond the buzzwords.</p><span class="workshop-format">Keynote or Panel</span></div>
+        <div class="workshop-item"><h4>Turning Festivals into Tourism Products</h4><p>Converting festival attendees into multi-day tourists. From Untold to village traditions.</p><span class="workshop-format">Half-Day Workshop</span></div>
+        <div class="workshop-item"><h4>AI in Tourism Marketing</h4><p>Content creation, personalisation, chatbots, and predictive analytics for travel.</p><span class="workshop-format">Keynote or Masterclass</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CASE STUDIES ============ -->
+<section class="cases" id="results">
+  <div class="container"><div class="section-header anim"><div class="section-eyebrow">Proven Results</div><h2 class="section-title">Selected Client Work</h2><p class="section-subtitle">Measurable impact across destinations, travel brands, and technology companies.</p><div class="gold-bar"></div></div></div>
+  <div class="cases-grid">
+    <div class="case-card anim"><div class="case-content"><div class="case-label">DMO Campaign</div><h3>Mamaia-Constanta, Romania</h3><p>Personalised video ad campaign targeting Germany and UK markets on Instagram.</p><div class="case-stat">50%</div><div class="case-stat-label">Click-Through Rate</div></div></div>
+    <div class="case-card anim"><div class="case-content"><div class="case-label">Market Strategy</div><h3>Sojern: DACH Market Study</h3><p>Hotels vertical strategy and market readiness for Germany, Austria, Switzerland.</p><div class="case-stat">DACH</div><div class="case-stat-label">Led to Market-Specific Hiring</div></div></div>
+    <div class="case-card anim"><div class="case-content"><div class="case-label">Wine Tourism</div><h3>Moldova Wine Tourism Growth Plan</h3><p>Review optimisation and strategy for Moldova's top wineries under ONVV.</p><div class="case-stat">ONVV</div><div class="case-stat-label">National Wine Authority Partnership</div></div></div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testimonials">
+  <div class="container"><div class="section-header anim"><div class="section-eyebrow">Client Voices</div><h2 class="section-title">What They Say</h2><div class="gold-bar"></div></div></div>
+  <div class="testimonials-grid" style="max-width:1200px;margin:0 auto;padding:0 24px;">
+    <div class="testimonial-card anim"><div class="testimonial-quote">&ldquo;</div><p class="testimonial-text">Sojern assigned 2 projects to Thomas. Within 3 months, Thomas delivered great results. The DACH study resulted in hiring a manager for the German market and an active pursuit of DACH opportunities.</p><div class="testimonial-author"><div class="testimonial-name">Matthieu Betton</div><div class="testimonial-role">General Manager, Europe at Sojern</div></div></div>
+    <div class="testimonial-card anim"><div class="testimonial-quote">&ldquo;</div><p class="testimonial-text">Thomas' professional and calm approach, his in-depth knowledge and expertise, as well as his vast network of connections have so far proven invaluable for me and Kuende!</p><div class="testimonial-author"><div class="testimonial-name">Pavel Antohe</div><div class="testimonial-role">Founder & CEO of Kuende</div></div></div>
+    <div class="testimonial-card anim"><div class="testimonial-quote">&ldquo;</div><p class="testimonial-text">Thomas' connections within the travel industry are astonishing. His personal relations opened so many valuable doors for Pearlshare and, even after the acquisition by Smartvel, they continued to open!</p><div class="testimonial-author"><div class="testimonial-name">Prashant Raizada</div><div class="testimonial-role">Interim CEO, Pearlshare (acq. by Smartvel)</div></div></div>
+  </div>
+</section>
+
+<!-- ============ SPEAKING ============ -->
+<section class="speaking" id="speaking">
+  <div class="speaking-layout">
+    <div class="anim"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/TmtZbqfOwRM" title="Thomas Bangert - IQ Digital Keynote" allowfullscreen loading="lazy"></iframe></div></div>
+    <div class="speaking-info anim">
+      <div class="section-eyebrow">Thought Leadership</div>
+      <h3>Available for Speaking Engagements</h3>
+      <p>Thomas speaks at international travel conferences on destination marketing, slow travel, digital transformation, and the future of tourism.</p>
+      <ul class="speaking-events">
+        <li><strong>IQ Digital 2025</strong><span>Constanta, Romania</span></li>
+        <li><strong>Discover North-East Conference</strong><span>Botosani, Romania</span></li>
+        <li><strong>WTM London</strong><span>United Kingdom</span></li>
+        <li><strong>ITB Berlin</strong><span>Germany</span></li>
+      </ul>
+      <a href="https://calendly.com/thomas-thebangertconsultancy/30min" target="_blank" class="btn-primary">Discuss Speaking &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEWS FEED ============ -->
+<section class="news" id="news">
+  <div class="news-content">
+    <div class="section-header anim">
+      <div class="section-eyebrow">Industry Intelligence</div>
+      <h2 class="section-title">Tourism & Travel News</h2>
+      <p class="section-subtitle">The latest developments across the global travel industry, curated by The Bangert Consultancy.</p>
+      <div class="gold-bar"></div>
+    </div>
+    <div class="news-grid" id="newsGrid">
+      <!-- News cards are loaded dynamically from news_feed.json -->
+      <!-- Fallback static content shown if feed not yet configured -->
+      <div class="news-card anim" data-geo="romania">
+        <div class="news-card-category news-cat-romania">Romania</div>
+        <div class="news-card-source">Romania Tourism</div>
+        <h4>Bucharest Introduces Tourist Tax for 2026</h4>
+        <p>The Romanian capital approved a RON 10 per night levy expected to generate millions annually for tourism promotion.</p>
+        <div class="news-card-date">January 2026</div>
+        <a href="#" class="news-card-link">Read more &rarr;</a>
+      </div>
+      <div class="news-card anim" data-geo="europe">
+        <div class="news-card-category news-cat-europe">European Tourism</div>
+        <div class="news-card-source">European Travel Commission</div>
+        <h4>EU Backs Regional DMO Networks Across Member States</h4>
+        <p>New funding supports destination management organisations with operational budgets and cross-border marketing initiatives.</p>
+        <div class="news-card-date">January 2026</div>
+        <a href="#" class="news-card-link">Read more &rarr;</a>
+      </div>
+      <div class="news-card anim" data-geo="global">
+        <div class="news-card-category news-cat-global">Global Travel</div>
+        <div class="news-card-source">Skift</div>
+        <h4>Travel Tech Investment Hits Record Levels in 2025</h4>
+        <p>AI-powered personalisation and programmatic advertising lead funding rounds across the global travel technology sector.</p>
+        <div class="news-card-date">January 2026</div>
+        <a href="#" class="news-card-link">Read more &rarr;</a>
+      </div>
+      <div class="news-card anim" data-geo="romania">
+        <div class="news-card-category news-cat-romania">Romania</div>
+        <div class="news-card-source">Romania Insider</div>
+        <h4>Romania to Establish 8 Regional DMOs with EU Funding</h4>
+        <p>Backed by over EUR 100 million, Romania is building destination management organisations to professionalise tourism promotion.</p>
+        <div class="news-card-date">January 2026</div>
+        <a href="#" class="news-card-link">Read more &rarr;</a>
+      </div>
+      <div class="news-card anim" data-geo="europe">
+        <div class="news-card-category news-cat-europe">European Tourism</div>
+        <div class="news-card-source">Euronews Travel</div>
+        <h4>Mediterranean Destinations Rethink Summer Capacity Limits</h4>
+        <p>Barcelona, Dubrovnik, and Santorini lead a wave of European cities implementing visitor management strategies.</p>
+        <div class="news-card-date">January 2026</div>
+        <a href="#" class="news-card-link">Read more &rarr;</a>
+      </div>
+      <div class="news-card anim" data-geo="global">
+        <div class="news-card-category news-cat-global">Global Travel</div>
+        <div class="news-card-source">PhocusWire</div>
+        <h4>Sustainable Tourism Certifications See Growing Demand</h4>
+        <p>Travellers increasingly seek verified sustainability credentials when choosing destinations and accommodation.</p>
+        <div class="news-card-date">January 2026</div>
+        <a href="#" class="news-card-link">Read more &rarr;</a>
+      </div>
+    </div>
+    <div class="news-refresh">
+      <p class="news-refresh-note">Updated automatically. Powered by The Bangert Consultancy news agent.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta">
+  <div class="cta-content anim">
+    <h2>Ready to grow your tourism brand?</h2>
+    <p>Whether you need a destination marketing strategy, a keynote speaker, a review optimisation workshop, or a trusted advisor, let's talk.</p>
+    <div class="cta-buttons">
+      <a href="https://calendly.com/thomas-thebangertconsultancy/30min" target="_blank" class="btn-primary">Book a Free Discovery Call &rarr;</a>
+      <a href="mailto:thomas@thebangertconsultancy.com" class="btn-secondary">Email Thomas Directly</a>
+    </div>
+    <p class="cta-note">30-minute call. No obligation. Let's see if there's a fit.</p>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="contact-grid">
+    <div class="contact-info anim">
+      <div class="section-eyebrow">Get in Touch</div>
+      <h3>Let's Build Something Together</h3>
+      <p>Whether you represent a destination, a hotel group, a travel tech company, or a government tourism office, we'd love to hear about your challenges.</p>
+      <div class="contact-detail"><div class="contact-detail-icon">&#9993;</div><div class="contact-detail-text"><a href="mailto:thomas@thebangertconsultancy.com">thomas@thebangertconsultancy.com</a></div></div>
+      <div class="contact-detail"><div class="contact-detail-icon">&#9742;</div><div class="contact-detail-text">+44 (0) 7766 407 744</div></div>
+      <div class="contact-detail"><div class="contact-detail-icon">&#127758;</div><div class="contact-detail-text"><a href="https://www.linkedin.com/in/thomas-bangert-3101445/" target="_blank">LinkedIn Profile</a></div></div>
+      <div class="contact-detail"><div class="contact-detail-icon">&#128197;</div><div class="contact-detail-text"><a href="https://calendly.com/thomas-thebangertconsultancy/30min" target="_blank">Book on Calendly</a></div></div>
+    </div>
+    <div class="contact-form anim">
+      <form action="https://formsubmit.co/thomas@thebangertconsultancy.com" method="POST">
+        <input type="hidden" name="_subject" value="New inquiry from The Bangert Consultancy website">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://www.thebangertconsultancy.com/">
+        <div class="form-row">
+          <div class="form-group"><label for="name">Full Name</label><input type="text" id="name" name="name" placeholder="Your name" required></div>
+          <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="you@company.com" required></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label for="company">Company / Organisation</label><input type="text" id="company" name="company" placeholder="Your organisation"></div>
+          <div class="form-group"><label for="interest">I'm Interested In</label><select id="interest" name="interest"><option value="">Select an option</option><option value="Consulting / Strategy">Consulting / Strategy</option><option value="Keynote Speaking">Keynote Speaking</option><option value="Workshop">Workshop or Masterclass</option><option value="Review Optimisation">Review Optimisation</option><option value="DMO / Destination Marketing">DMO / Destination Marketing</option><option value="Digital Campaign">Digital Campaign</option><option value="Advisory / Retainer">Advisory / Retainer</option><option value="Other">Other</option></select></div>
+        </div>
+        <div class="form-group"><label for="message">Tell Us About Your Project</label><textarea id="message" name="message" placeholder="Brief description of what you're looking for..."></textarea></div>
+        <button type="submit" class="btn-submit">Send Enquiry &rarr;</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand-name">The Bangert Consultancy</div>
+      <p class="footer-tagline">Fueling Growth. Empowering Travel.<br>Tourism strategy, destination marketing, and growth consulting.</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/thomas-bangert-3101445/" target="_blank" title="LinkedIn">in</a>
+        <a href="mailto:thomas@thebangertconsultancy.com" title="Email">@</a>
+      </div>
+    </div>
+    <div class="footer-col"><h4>Services</h4><ul><li><a href="#services">Growth Strategy</a></li><li><a href="#services">Destination Marketing</a></li><li><a href="#services">Digital Campaigns</a></li><li><a href="#services">Review Optimisation</a></li><li><a href="#workshops">Workshops & Keynotes</a></li></ul></div>
+    <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="#about">About Thomas</a></li><li><a href="#results">Client Results</a></li><li><a href="#speaking">Speaking</a></li><li><a href="#news">Industry News</a></li><li><a href="https://calendly.com/thomas-thebangertconsultancy/30min" target="_blank">Book a Call</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>&copy; 2026 The Bangert Consultancy. All rights reserved.</span><span>London &middot; Bucharest</span></div>
+</footer>
+
+<!-- ============ SCRIPTS ============ -->
+<script>
+// === NAV SCROLL ===
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 60));
+
+// === MOBILE NAV ===
+document.getElementById('navToggle').addEventListener('click', () => {
+  document.getElementById('navLinks').classList.toggle('open');
+});
+
+// === HERO SLIDESHOW ===
+(function() {
+  const slides = document.querySelectorAll('.hero-slide');
+  const dots = document.querySelectorAll('.hero-dot');
+  const caption = document.getElementById('heroCaption');
+  let current = 0;
+  let timer;
+
+  function goTo(idx) {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = idx;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+    caption.textContent = slides[current].dataset.caption;
+  }
+
+  function next() { goTo((current + 1) % slides.length); }
+
+  function startTimer() { timer = setInterval(next, 5000); }
+  function resetTimer() { clearInterval(timer); startTimer(); }
+
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => { goTo(parseInt(dot.dataset.index)); resetTimer(); });
+  });
+
+  startTimer();
+})();
+
+// === ABOUT SLIDESHOW ===
+(function() {
+  const slides = document.querySelectorAll('.about-slide');
+  const dots = document.querySelectorAll('.about-dot');
+  let current = 0;
+
+  function goTo(idx) {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = idx;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+  }
+
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => goTo(parseInt(dot.dataset.index)));
+  });
+
+  setInterval(() => goTo((current + 1) % slides.length), 4000);
+})();
+
+// === SCROLL ANIMATIONS ===
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => entry.target.classList.add('vis'), i * 70);
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+document.querySelectorAll('.anim').forEach(el => observer.observe(el));
+
+// === SMOOTH SCROLL ===
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); document.getElementById('navLinks').classList.remove('open'); }
+  });
+});
+
+// === NEWS FEED LOADER ===
+// Loads articles from news_feed.json (generated by news_agent.py)
+// and renders them with geographic category badges.
+async function loadNewsFeed() {
+  try {
+    // UPDATE THIS URL after setting up GitHub Pages for your news feed.
+    // Option 1: Same host (if news_feed.json is deployed with your site)
+    // const FEED_URL = '/news_feed.json';
+    // Option 2: GitHub Pages (recommended, separate repo)
+    // const FEED_URL = 'https://YOUR_GITHUB_USERNAME.github.io/bangert-news-feed/news_feed.json';
+    const FEED_URL = '/news_feed.json';
+    
+    const response = await fetch(FEED_URL);
+    if (!response.ok) return; // Keep fallback static content
+    const articles = await response.json();
+    const grid = document.getElementById('newsGrid');
+
+    if (articles && articles.length > 0) {
+      // Map category names to CSS classes and geo data attributes
+      const catMap = {
+        'Romania': { css: 'news-cat-romania', geo: 'romania' },
+        'European Tourism': { css: 'news-cat-europe', geo: 'europe' },
+        'Global Travel': { css: 'news-cat-global', geo: 'global' },
+      };
+
+      grid.innerHTML = articles.slice(0, 9).map(article => {
+        const cat = catMap[article.category] || catMap['Global Travel'];
+        return `
+          <div class="news-card anim vis" data-geo="${cat.geo}">
+            <div class="news-card-category ${cat.css}">${article.category}</div>
+            <div class="news-card-source">${article.source || 'Tourism News'}</div>
+            <h4>${article.title}</h4>
+            <p>${article.summary}</p>
+            <div class="news-card-date">${article.date || ''}</div>
+            <a href="${article.url}" target="_blank" rel="noopener" class="news-card-link">Read more &rarr;</a>
+          </div>
+        `;
+      }).join('');
+    }
+  } catch(e) {
+    console.log('News feed not loaded, showing fallback content.');
+  }
+}
+
+loadNewsFeed();
+</script>
+
+</body>
+</html>
