@@ -24,9 +24,9 @@
 <meta name="twitter:image" content="https://www.thebangertconsultancy.com/images/og-image.jpg">
 
 <!-- Favicon (replace with your actual favicon files) -->
-<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -149,11 +149,11 @@ a { text-decoration: none; color: inherit; }
    Drop your photos into /images/hero/ and they'll appear automatically.
    Recommended: 1920x1080px JPG, under 400KB each.
 */
-.hero-slide:nth-child(1) { background-image: url('./images/hero/slide-1.jpg');
-.hero-slide:nth-child(2) { background-image: url('./images/hero/slide-2.jpg');
-.hero-slide:nth-child(3) { background-image: url('./images/hero/slide-3.jpg');
-.hero-slide:nth-child(4) { background-image: url('./images/hero/slide-4.jpg');
-.hero-slide:nth-child(5) { background-image: url('./images/hero/slide-5.jpg');
+.hero-slide:nth-child(1) { background-image: url('./images/hero/slide-1.jpg'); background-color: #1a2a3a; }
+.hero-slide:nth-child(2) { background-image: url('./images/hero/slide-2.jpg'); background-color: #1d2d3f; }
+.hero-slide:nth-child(3) { background-image: url('./images/hero/slide-3.jpg'); background-color: #162636; }
+.hero-slide:nth-child(4) { background-image: url('./images/hero/slide-4.jpg'); background-color: #1f2f41; }
+.hero-slide:nth-child(5) { background-image: url('./images/hero/slide-5.jpg'); background-color: #18283a; }
 
 /* Dark overlay on slides for text legibility */
 .hero-overlay {
@@ -301,9 +301,9 @@ a { text-decoration: none; color: inherit; }
    ABOUT PHOTOS: Drop into /images/about/ folder.
    Recommended: 800x1000px JPG, portrait orientation.
 */
-.about-slide:nth-child(1) { background-image: url('./images/about/headshot.jpg');
-.about-slide:nth-child(2) { background-image: url('./images/about/speaking.jpg');
-.about-slide:nth-child(3) { background-image: url('./images/about/conference.jpg');
+.about-slide:nth-child(1) { background-image: url('./images/about/headshot.jpg'); background-color: var(--sand); }
+.about-slide:nth-child(2) { background-image: url('./images/about/speaking.jpg'); background-color: #E5DFD4; }
+.about-slide:nth-child(3) { background-image: url('./images/about/conference.jpg'); background-color: var(--sand); }
 
 .about-slide-label {
   position: absolute; bottom: 0; left: 0; right: 0;
@@ -1079,10 +1079,10 @@ async function loadNewsFeed() {
   try {
     // UPDATE THIS URL after setting up GitHub Pages for your news feed.
     // Option 1: Same host (if news_feed.json is deployed with your site)
-    // const FEED_URL = '/news_feed.json';
+    // const FEED_URL = './news_feed.json';
     // Option 2: GitHub Pages (recommended, separate repo)
     // const FEED_URL = 'https://YOUR_GITHUB_USERNAME.github.io/bangert-news-feed/news_feed.json';
-    const FEED_URL = '/news_feed.json';
+    const FEED_URL = './news_feed.json';
     
     const response = await fetch(FEED_URL);
     if (!response.ok) return; // Keep fallback static content
